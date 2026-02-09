@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a290.wiki/sitemap.xml

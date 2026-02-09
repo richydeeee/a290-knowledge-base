@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://a290.wiki/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://a290.wiki/prospective-owner/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/new-owner/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/how-to/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/troubleshooting/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/reference/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a290.wiki/accessories/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a290.wiki/communities/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>
