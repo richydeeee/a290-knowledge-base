@@ -8,4 +8,12 @@
   <url><loc>https://a290.wiki/reference/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://a290.wiki/accessories/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://a290.wiki/communities/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://a290.wiki/fr/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://a290.wiki/fr/prospective-owner/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/fr/new-owner/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/fr/how-to/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/fr/troubleshooting/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a290.wiki/fr/reference/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a290.wiki/fr/accessories/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a290.wiki/fr/communities/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

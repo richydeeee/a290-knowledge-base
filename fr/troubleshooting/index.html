@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><title>Dépannage – Base de connaissances Alpine A290</title><meta content="Problèmes de recharge, problèmes d'application, électricité, mécanique, peinture et carrosserie." property="og:description" /><link href="/styles.css" rel="stylesheet" /></head><body><div class="lang-switcher"><a href="/troubleshooting/">EN</a><span class="sep">|</span><span class="current">FR</span></div><h1><a href="/fr/">Base de connaissances Alpine A290</a></h1><p class="go-home--top"><a href="/fr/">Retour à la table des matières</a></p><h2>Dépannage</h2>
+<ul>
+<li><a href="#charging">Problèmes de recharge</a></li>
+<li><a href="#app">Problèmes d'application</a></li>
+<li><a href="#electrical">Logiciel et électricité</a></li>
+<li><a href="#mechanical">Problèmes mécaniques</a></li>
+<li><a href="#paint-body">Peinture et carrosserie</a></li>
+</ul>
+<hr />
+
+<article id="charging"><h3>Problèmes de recharge <a href="#charging" class="anchor-link">§</a></h3>
+
+<p><strong>La voiture ne charge pas la nuit :</strong> Problème le plus courant - la voiture s'endort, le chargeur pense qu'elle n'est pas là.</p>
+<ul>
+<li><strong>Solution 1 :</strong> Planifier via l'application de la voiture (pas l'application du chargeur), laisser le chargeur déverrouillé</li>
+<li><strong>Solution 2 :</strong> Utiliser Octopus Go (pas Intelligent) - plus fiable</li>
+<li><strong>Solution 3 (Zappi) :</strong> Verrouiller/déverrouiller la voiture, éteindre/allumer les phares pour réinitialiser</li>
+<li><strong>Solution 4 (Ohme) :</strong> Ohme peut appliquer le "CP wake up fix" - appelez leur support</li>
+<li>Lumière rouge au port de charge = échec/arrêt de la recharge</li>
+</ul>
+
+<p><strong>Zappi + IOG :</strong> Fonctionne pour certains ("Nous avons 2 A290, les deux chargent parfaitement avec Zappi et IOG en utilisant l'intégration du chargeur depuis juillet"). Échoue pour d'autres - interruptions de recharge intermittentes. Mise à jour logicielle promise mais les rapports suggèrent qu'elle ne résout pas complètement le problème.</p>
+
+<p><strong>Échec de recharge occasionnel :</strong> Parfois la voiture ne charge tout simplement pas même quand programmée. Nécessite une intervention manuelle. Problème d'application/communication.</p>
+
+<p><strong>Autonomie affichant un montant erroné après recharge :</strong> Charge à 90 %, affiche 195 km (121 miles), réinitialise kW/km → monte à 288 km (179 miles). Le "guess-o-meter" est basé sur l'historique de conduite récent. Réinitialisez l'ordinateur de bord pour un chiffre plus réaliste - ou ignorez simplement l'autonomie entièrement et utilisez le pourcentage de batterie.</p>
+</article>
+
+<article id="app"><h3>Problèmes d'application <a href="#app" class="anchor-link">§</a></h3>
+
+<p><strong>Déconnexion complète de l'application :</strong> Toutes les données ont disparu de l'application. Généralement un problème de serveur Renault. Se résout de lui-même (heures à jours). "L'application m'a donné l'option de reconnecter la voiture" après correction du serveur.</p>
+
+<p><strong>Décalage d'affichage du pourcentage de charge :</strong> L'application affiche le niveau de batterie avec 3-4 heures de retard sur l'état réel pendant la recharge. Problème connu, pas de solution.</p>
+
+<p><strong>Message "Subscription deactivated" :</strong> Message dans l'état du réseau 4G de la voiture. Généralement un problème de serveur même si l'abonnement apparaît actif.</p>
+
+<p><strong>Boucle de connexion Android :</strong> Problème connu janvier 2026 après changements du backend Renault. Corrigé par mise à jour de l'application.</p>
+
+<p><strong>Bug radio sans son :</strong> La radio affiche la chaîne mais pas de son. <strong>Solution :</strong> Dites "Hey Google" ou appuyez rapidement sur le bouton microphone au volant - quand le système s'ennuie d'écouter, le volume normal revient.</p>
+</article>
+
+<article id="electrical"><h3>Logiciel et électricité <a href="#electrical" class="anchor-link">§</a></h3>
+
+<p><strong>Avertissement "Check Lights" :</strong> Apparu une fois, possiblement lié aux feux automatiques. Solution : passer en feux manuels - a disparu au trajet suivant.</p>
+
+<p><strong>Redémarrage tableau de bord/infodivertissement :</strong> Les écrans sont devenus noirs et ont redémarré deux fois pendant un trajet. Événement rare, se résout généralement de lui-même.</p>
+
+<p><strong>Limiteur de vitesse activé par défaut :</strong> Limiteur de vitesse sélectionné par défaut à chaque démarrage (ennuyeux mais pas de limite définie). Appuyez sur le bouton à droite du volant deux fois pour l'éteindre.</p>
+
+<p><strong>Télématique ne se charge pas :</strong> Message "Error loading app". Si modèle GT : c'est une option payante (pas en série). Si GTS/GT Performance : devrait être en série, peut nécessiter une mise à jour de l'application.</p>
+
+<p><strong>Popup score éco :</strong> Apparaît lors de l'extinction, affiche 0/100. Dit "appuyez pour plus d'infos" - appuyez dessus et il disparaît. L'OS Renault qui transparaît à travers l'habillage Alpine.</p>
+</article>
+
+<article id="mechanical"><h3>Problèmes mécaniques <a href="#mechanical" class="anchor-link">§</a></h3>
+
+<p><strong>Corrosion des disques de frein arrière :</strong> Rouille importante sur les disques arrière en raison du freinage régénératif. Conduisez occasionnellement avec la régénération désactivée pour forcer l'utilisation des freins physiques. Pas un défaut - normal pour les VE avec forte régénération.</p>
+
+<p><strong>Rouille de l'arbre de transmission :</strong> Rapports d'arbres de transmission rouillant en quelques semaines. Préoccupation particulièrement pour les propriétaires côtiers. Traitements sous caisse (Lanoguard) mentionnés comme protection.</p>
+
+<p><strong>Grincement de suspension :</strong> Bruit de grincement sur routes irrégulières. Plusieurs rapports, pas de solution d'Alpine pour le moment.</p>
+
+<p><strong>Cliquetis avant :</strong> Cliquetis du côté avant conducteur sur bosses. Plusieurs visites chez le concessionnaire ; certains ont eu des pièces de suspension et de frein remplacées. Une solution : serrage des boulons de sous-châssis.</p>
+
+<p><strong>Sifflement du chauffage :</strong> Sifflement aux niveaux de ventilateur 3-4. Lié au filtre à pollen. Le concessionnaire peut corriger.</p>
+</article>
+
+<article id="paint-body"><h3>Peinture et carrosserie <a href="#paint-body" class="anchor-link">§</a></h3>
+
+<p><strong>Entretien Gris Tornado mat :</strong> Utilisez uniquement un nettoyant spécifique pour mat (pH neutre). Les produits pour peinture brillante ont des agents de remplissage qui ruinent la finition mate. Les retouches intelligentes sont plus difficiles - les bosses et éraflures se remarquent plus. PPF fortement recommandé.</p>
+
+<p><strong>Déformation du siège en cuir (GTS) :</strong> Le siège conducteur développe deux creux qui ne se lissent pas. Alpine est conscient d'"un nombre significatif de propriétaires" rencontrant ce problème. Source un nouveau fournisseur de cuir. Inspectera et remplacera le cuir/base de siège sans frais une fois les nouveaux matériaux disponibles. Si devaient racheter, certains choisiraient les sièges en tissu GT Performance à la place.</p>
+
+<p><strong>Corrosion des boulons de roue :</strong> Les écrous de roue rouillent/se corrodent rapidement. Caches de boulons de roue noirs 17 mm en première modification (presque universel). La voiture vient avec des boulons de roue antivol "frustrantement en noir !"</p>
+</article>
+
+<p class="go-home--bottom"><a href="/fr/">Retour à la table des matières.</a></p><footer><p>Ceci est une base de connaissances non officielle compilée à partir des expériences des propriétaires sur PistonHeads et les groupes Facebook.</p><p>Certains liens sources peuvent pointer vers des groupes Facebook privés et ne fonctionneront que pour les membres du groupe.</p><p>Suivez tous les conseils à vos risques et périls.</p>
+<p class="support-link">☕ Ce site coûte de l'argent à gérer. Si vous le trouvez utile, <a target="_blank" rel="noopener" href="https://buymeacoffee.com/a290wiki">offrez-moi un café</a>.</p></footer><a href="#" class="back-to-top" id="backToTop" title="Retour en haut">↑</a>
+<style>
+.back-to-top{position:fixed;bottom:2rem;right:2rem;background:#0057a0;color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;text-decoration:none;opacity:0;transition:opacity .3s;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.back-to-top:hover{background:#003d73}
+.back-to-top.visible{opacity:1}
+</style>
+<script>
+(function(){var b=document.getElementById('backToTop');window.addEventListener('scroll',function(){b.classList.toggle('visible',window.scrollY>400)});b.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})})})();
+</script></body></html>

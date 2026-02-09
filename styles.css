@@ -161,3 +161,43 @@ figcaption {
   color: #0055A4;
   font-weight: 600;
 }
+
+/* Language switcher */
+.lang-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+.lang-switcher a {
+  color: #0055A4;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 8px;
+  transition: opacity 0.2s;
+}
+.lang-switcher a:hover {
+  opacity: 0.7;
+}
+.lang-switcher .current {
+  color: #333;
+  font-weight: 700;
+}
+.lang-switcher .sep {
+  color: #ccc;
+  margin: 0 4px;
+}
+@media (max-width: 600px) {
+  .lang-switcher {
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
