@@ -21,6 +21,10 @@
 
 <p><strong>Zappi + IOG:</strong> Works for some ("We have 2 A290s, both charge perfectly with Zappi and IOG using charger integration since July"). Fails for others - intermittent charging interruptions. Software update promised but reports suggest it doesn't fully fix the issue.</p>
 
+<p><strong>Deep sleep charge failure:</strong> If you plug in many hours before the scheduled charge (e.g. 7–8 hours early), the car can enter deep sleep and the charger fails to wake it. <strong>Fix:</strong> Plug in closer to the scheduled charge time — 1–2 hours before is ideal. This is separate from the IOG issue above.</p>
+
+<p><strong>Octopus IOG "Charge to add" trap:</strong> If you set "Charge to add" in the Octopus app, set the target to 90%+ (not lower). The car's own 80% charge limit overrides Octopus, so if Octopus thinks it only needs to add 20% it may not bother starting a session. Setting it high ensures Octopus always initiates the charge.</p>
+
 <p><strong>Occasional charge failure:</strong> Sometimes the car just doesn't charge even when programmed. Requires manual override. App/communication glitch.</p>
 
 <p><strong>Range showing wrong after charge:</strong> Charge to 90%, shows 121 miles (195 km), reset kW/mile → shoots to 179 miles (288 km). The "guess-o-meter" is based on recent driving history. Reset the trip computer for a more realistic figure - or just ignore range entirely and use battery percentage.</p>
