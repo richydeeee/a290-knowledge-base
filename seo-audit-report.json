@@ -1,0 +1,113 @@
+{
+  "timestamp": "2026-05-10T05:00:00Z",
+  "site": "https://a290.wiki",
+  "sitemap_urls": 16,
+  "pages_audited": 16,
+  "checks": {
+    "page_availability": {
+      "status": "pass",
+      "issues": [],
+      "details": "All 16 URLs in sitemap return HTTP 200. No 404, 3xx, 5xx, or timeout errors detected."
+    },
+    "meta_tags": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "meta_description_too_short",
+          "severity": "warning",
+          "detail": "communities/index.html: meta description is 102 chars (recommended 120-160)",
+          "page": "communities/index.html"
+        },
+        {
+          "type": "meta_description_too_short",
+          "severity": "warning",
+          "detail": "how-to/index.html: meta description is 115 chars (recommended 120-160)",
+          "page": "how-to/index.html"
+        },
+        {
+          "type": "meta_description_too_short",
+          "severity": "warning",
+          "detail": "new-owner/index.html: meta description is 119 chars (recommended 120-160)",
+          "page": "new-owner/index.html"
+        },
+        {
+          "type": "meta_description_too_long",
+          "severity": "warning",
+          "detail": "reference/index.html: meta description is 171 chars (recommended max 160; may be truncated in SERPs)",
+          "page": "reference/index.html"
+        },
+        {
+          "type": "og_description_has_amp_entity",
+          "severity": "minor",
+          "detail": "reference/index.html: og:description contains literal '&amp;' HTML entity instead of plain '&'. This works in HTML but is unnecessary in a meta tag content attribute.",
+          "page": "reference/index.html"
+        },
+        {
+          "type": "page_title_too_long",
+          "severity": "warning",
+          "detail": "prospective-owner/index.html: page title is 67 chars (recommended max 60; will be truncated in SERPs)",
+          "page": "prospective-owner/index.html"
+        },
+        {
+          "type": "og_vs_twitter_description_mismatch",
+          "severity": "minor",
+          "detail": "reference/index.html: og:description and twitter:description have different content. og_desc='Alpine A290 specifications, trim comparison (GT/GTS/Première), safety & driving pack contents, charging curve data, running costs, service intervals and MY26 changes.' vs twitter_desc='Alpine A290 specifications, charging curve data, real world running costs, service intervals and MY26 changes.'",
+          "page": "reference/index.html"
+        },
+        {
+          "type": "shared_og_image_not_page_specific",
+          "severity": "info",
+          "detail": "All 16 pages use the same og:image (https://a290.wiki/images/a290-hero.png). Consider using page-specific images for better social sharing. The shared image is a hero shot of the car, which works for the brand but doesn't differentiate individual pages.",
+          "page": "all pages"
+        }
+      ],
+      "details": "All pages have: <title>, meta name=description, og:title, og:description, og:image, og:type=website, og:url, canonical, hreflang (en/fr/x-default), twitter:card (summary_large_image), twitter:title, twitter:description. No missing essential meta tags."
+    },
+    "image_alt": {
+      "status": "pass",
+      "issues": [],
+      "details": "All 6 <img> tags across the site include alt attributes. No images missing alt text."
+    },
+    "internal_links": {
+      "status": "pass",
+      "issues": [],
+      "details": "All 17 internal href links resolve to existing pages or files. No broken internal links detected. All links are either directory paths pointing to index.html or /styles.css."
+    },
+    "hreflang": {
+      "status": "pass",
+      "issues": [],
+      "details": "All 16 pages include hreflang alternates for en, fr, and x-default. EN pages correctly point to FR equivalents and vice versa. No mismatches detected."
+    },
+    "canonical_og_url_consistency": {
+      "status": "pass",
+      "issues": [],
+      "details": "All 16 pages have matching canonical URLs and og:url values. No discrepancies."
+    },
+    "structured_data": {
+      "status": "pass",
+      "issues": [],
+      "details": "All 16 pages include JSON-LD structured data. Schema types include BreadcrumbList and WebSite (with name, url, description, inLanguage)."
+    },
+    "lang_attributes": {
+      "status": "pass",
+      "issues": [],
+      "details": "EN pages correctly use lang=en, FR pages correctly use lang=fr."
+    }
+  },
+  "summary": {
+    "total_issues": 8,
+    "critical": 0,
+    "warnings": 5,
+    "minor": 2,
+    "info": 1,
+    "passing_checks": 7,
+    "failing_checks": 0
+  },
+  "recommendations": [
+    "Extend meta descriptions for communities (102 chars), how-to (115 chars), and new-owner (119 chars) pages to reach at least 120 characters for optimal SERP display.",
+    "Trim meta description on reference/index.html from 171 to 160 chars or less to prevent SERP truncation.",
+    "Trim page title on prospective-owner/index.html from 67 to 60 chars or less.",
+    "Consider adding page-specific og:image values instead of using the same hero image for all 16 pages.",
+    "Fix og:content and twitter:content discrepancy on reference/index.html (they differ in content)."
+  ]
+}
