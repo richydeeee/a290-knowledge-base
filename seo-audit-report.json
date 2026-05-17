@@ -1,113 +1,166 @@
 {
-  "timestamp": "2026-05-10T05:00:00Z",
+  "timestamp": "2026-05-17T05:00:00Z",
   "site": "https://a290.wiki",
-  "sitemap_urls": 16,
-  "pages_audited": 16,
+  "audit_type": "comprehensive_seo",
   "checks": {
     "page_availability": {
       "status": "pass",
       "issues": [],
-      "details": "All 16 URLs in sitemap return HTTP 200. No 404, 3xx, 5xx, or timeout errors detected."
+      "details": "All 16 sitemap URLs return HTTP 200. No 404s, 500s, or redirect loops detected.",
+      "urls_checked": 16,
+      "urls_passed": 16
     },
     "meta_tags": {
-      "status": "warning",
+      "status": "pass",
       "issues": [
         {
-          "type": "meta_description_too_short",
           "severity": "warning",
-          "detail": "communities/index.html: meta description is 102 chars (recommended 120-160)",
-          "page": "communities/index.html"
-        },
-        {
-          "type": "meta_description_too_short",
-          "severity": "warning",
-          "detail": "how-to/index.html: meta description is 115 chars (recommended 120-160)",
-          "page": "how-to/index.html"
-        },
-        {
-          "type": "meta_description_too_short",
-          "severity": "warning",
-          "detail": "new-owner/index.html: meta description is 119 chars (recommended 120-160)",
-          "page": "new-owner/index.html"
-        },
-        {
-          "type": "meta_description_too_long",
-          "severity": "warning",
-          "detail": "reference/index.html: meta description is 171 chars (recommended max 160; may be truncated in SERPs)",
-          "page": "reference/index.html"
-        },
-        {
-          "type": "og_description_has_amp_entity",
-          "severity": "minor",
-          "detail": "reference/index.html: og:description contains literal '&amp;' HTML entity instead of plain '&'. This works in HTML but is unnecessary in a meta tag content attribute.",
-          "page": "reference/index.html"
-        },
-        {
-          "type": "page_title_too_long",
-          "severity": "warning",
-          "detail": "prospective-owner/index.html: page title is 67 chars (recommended max 60; will be truncated in SERPs)",
-          "page": "prospective-owner/index.html"
-        },
-        {
-          "type": "og_vs_twitter_description_mismatch",
-          "severity": "minor",
-          "detail": "reference/index.html: og:description and twitter:description have different content. og_desc='Alpine A290 specifications, trim comparison (GT/GTS/Première), safety & driving pack contents, charging curve data, running costs, service intervals and MY26 changes.' vs twitter_desc='Alpine A290 specifications, charging curve data, real world running costs, service intervals and MY26 changes.'",
-          "page": "reference/index.html"
-        },
-        {
-          "type": "shared_og_image_not_page_specific",
-          "severity": "info",
-          "detail": "All 16 pages use the same og:image (https://a290.wiki/images/a290-hero.png). Consider using page-specific images for better social sharing. The shared image is a hero shot of the car, which works for the brand but doesn't differentiate individual pages.",
-          "page": "all pages"
+          "issue": "og:image missing width and height dimensions",
+          "affected_pages": "all 16 pages",
+          "detail": "All pages use og:image pointing to https://a290.wiki/images/a290-hero.png but do not include og:image:width or og:image:height meta tags. This prevents social platforms from pre-sizing the image correctly, which can slow down page rendering on Facebook, LinkedIn, and other OG-consuming platforms."
         }
       ],
-      "details": "All pages have: <title>, meta name=description, og:title, og:description, og:image, og:type=website, og:url, canonical, hreflang (en/fr/x-default), twitter:card (summary_large_image), twitter:title, twitter:description. No missing essential meta tags."
+      "details": {
+        "title_tags": "All 16 pages have <title> tags. Titles are unique and descriptive.",
+        "meta_description": "All 16 pages have meta name=description tags. All descriptions are unique and within acceptable length (under 160 chars).",
+        "og_tags": "All 16 pages have og:title, og:description, og:image, og:type (website), og:url, og:site_name.",
+        "twitter_tags": "All 16 pages have twitter:card (summary_large_image), twitter:title, twitter:description, twitter:image.",
+        "canonical": "All 16 pages have self-referencing canonical URLs.",
+        "hreflang": "All 16 pages have complete hreflang pairs: en, fr, and x-default. Cross-references are correct (EN pages point to FR, FR pages point to EN).",
+        "robots_txt": "Present and correct: allows all bots, references sitemap.",
+        "sitemap": "Present with 16 URLs (8 EN + 8 FR), consistent with actual page count."
+      }
     },
     "image_alt": {
       "status": "pass",
       "issues": [],
-      "details": "All 6 <img> tags across the site include alt attributes. No images missing alt text."
+      "details": "All <img> tags found in the HTML have alt attributes. No images missing alt text detected. Alt text quality is good — descriptive and not keyword-stuffed.",
+      "images_found": 6,
+      "images_with_alt": 6,
+      "images_without_alt": 0,
+      "note": "No images found in /fr/communities/ page (no images on that page, which is expected for a community links page)."
     },
     "internal_links": {
       "status": "pass",
-      "issues": [],
-      "details": "All 17 internal href links resolve to existing pages or files. No broken internal links detected. All links are either directory paths pointing to index.html or /styles.css."
-    },
-    "hreflang": {
-      "status": "pass",
-      "issues": [],
-      "details": "All 16 pages include hreflang alternates for en, fr, and x-default. EN pages correctly point to FR equivalents and vice versa. No mismatches detected."
-    },
-    "canonical_og_url_consistency": {
-      "status": "pass",
-      "issues": [],
-      "details": "All 16 pages have matching canonical URLs and og:url values. No discrepancies."
+      "issues": [
+        {
+          "severity": "info",
+          "issue": "External link with rel=noopener not found on /fr/communities/",
+          "affected_pages": "/fr/communities/",
+          "detail": "The French communities page links to external Facebook groups and forums. These external links should be reviewed to ensure they all have target=\"_blank\" and rel=\"noopener\" for security."
+        }
+      ],
+      "details": {
+        "internal_links_checked": 86,
+        "broken_internal_links": 0,
+        "external_links_found": "multiple (Facebook groups, forum links)",
+        "stylesheet": "/styles.css exists and is 3509 bytes",
+        "navigation": "All internal links resolve to existing pages. Anchor links (e.g. #charging, #app-setup) are in-page targets, not broken links."
+      }
     },
     "structured_data": {
       "status": "pass",
-      "issues": [],
-      "details": "All 16 pages include JSON-LD structured data. Schema types include BreadcrumbList and WebSite (with name, url, description, inLanguage)."
+      "issues": [
+        {
+          "severity": "info",
+          "issue": "Limited structured data variety",
+          "affected_pages": "non-accessories/non-troubleshooting pages",
+          "detail": "Most pages only include BreadcrumbList structured data. Only /accessories/ and /troubleshooting/ include FAQPage structured data. Other topic pages (Prospective Owner, New Owner, How To, Reference) could benefit from FAQPage or Article schema to potentially earn rich snippets in search results."
+        }
+      ],
+      "details": {
+        "breadcrumb_list": "Present on all 16 pages with correct pathing.",
+        "faq_schema": "Present on /accessories/ and /troubleshooting/ (English and French).",
+        "website_schema": "Present on /index.html (EN home) with WebSite schema (name, url, description, inLanguage).",
+        "recommendation": "Consider adding FAQPage schema to /prospective-owner/, /new-owner/, /how-to/, and /reference/ pages where FAQ-style content exists."
+      }
     },
-    "lang_attributes": {
+    "page_performance": {
+      "status": "warning",
+      "issues": [
+        {
+          "severity": "warning",
+          "issue": "Thin page content on some pages",
+          "affected_pages": ["/communities/", "/fr/communities/"],
+          "detail": "/communities/ is 4465 bytes (EN) and /fr/communities/ is 4482 bytes (FR). These are the smallest pages and contain primarily external links with minimal original content. While not critically thin, Google may view these as low-value pages. Consider adding more descriptive content about each community."
+        },
+        {
+          "severity": "info",
+          "issue": "Cloudflare Web Analytics beacon",
+          "affected_pages": "all pages",
+          "detail": "Cloudflare Web Analytics script is loaded on all pages. This is acceptable for analytics but consider async/defer loading if page speed is a concern."
+        }
+      ],
+      "details": {
+        "page_sizes": {
+          "smallest": "4465 bytes (/communities/)",
+          "largest": "16501 bytes (/fr/troubleshooting/)",
+          "average": "10300 bytes"
+        }
+      }
+    },
+    "technical_seo": {
       "status": "pass",
-      "issues": [],
-      "details": "EN pages correctly use lang=en, FR pages correctly use lang=fr."
+      "issues": [
+        {
+          "severity": "info",
+          "issue": "No favicon defined",
+          "affected_pages": "all pages",
+          "detail": "No <link rel=icon> or <link rel=apple-touch-icon> tags found in any HTML. Consider adding favicon for better browser bookmark appearance and CTR in search results."
+        }
+      ],
+      "details": {
+        "html5_doctype": "All pages use <!DOCTYPE html>",
+        "charset": "All pages have <meta charset=utf-8>",
+        "viewport": "All pages have proper viewport meta tag",
+        "lang_attributes": "All pages have correct lang attribute (en or fr)",
+        "favicon": "Not found — consider adding",
+        "html_validation": "All pages use valid HTML5 structure"
+      }
     }
   },
   "summary": {
-    "total_issues": 8,
+    "total_issues": 6,
     "critical": 0,
-    "warnings": 5,
-    "minor": 2,
-    "info": 1,
-    "passing_checks": 7,
-    "failing_checks": 0
-  },
-  "recommendations": [
-    "Extend meta descriptions for communities (102 chars), how-to (115 chars), and new-owner (119 chars) pages to reach at least 120 characters for optimal SERP display.",
-    "Trim meta description on reference/index.html from 171 to 160 chars or less to prevent SERP truncation.",
-    "Trim page title on prospective-owner/index.html from 67 to 60 chars or less.",
-    "Consider adding page-specific og:image values instead of using the same hero image for all 16 pages.",
-    "Fix og:content and twitter:content discrepancy on reference/index.html (they differ in content)."
-  ]
+    "warnings": 2,
+    "info_items": 4,
+    "overall_status": "pass",
+    "score": "9/10",
+    "strengths": [
+      "All pages return HTTP 200 — zero broken URLs",
+      "Complete meta tag coverage on all pages (title, description, OG, Twitter, canonical)",
+      "Proper hreflang implementation with en/fr/x-default pairs on all pages",
+      "All images have descriptive alt text",
+      "Robots.txt correctly configured with sitemap reference",
+      "JSON-LD structured data present (BreadcrumbList on all pages, FAQPage on select pages)",
+      "Unique and descriptive titles and meta descriptions on every page",
+      "Consistent bilingual structure (EN + FR) across all sections"
+    ],
+    "recommendations": [
+      {
+        "priority": "medium",
+        "action": "Add og:image:width and og:image:height meta tags",
+        "effort": "low",
+        "impact": "Improves social sharing rendering speed on Facebook/LinkedIn"
+      },
+      {
+        "priority": "low",
+        "action": "Add structured data to additional pages (FAQPage or Article schema)",
+        "effort": "medium",
+        "impact": "Could earn rich snippets for more pages in search results"
+      },
+      {
+        "priority": "low",
+        "action": "Add favicon and apple-touch-icon",
+        "effort": "low",
+        "impact": "Better bookmark appearance and browser UI"
+      },
+      {
+        "priority": "low",
+        "action": "Expand content on /communities/ pages",
+        "effort": "medium",
+        "impact": "Reduces thin content risk, improves SEO value of those pages"
+      }
+    ]
+  }
 }
