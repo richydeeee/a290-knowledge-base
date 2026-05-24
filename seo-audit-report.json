@@ -1,166 +1,145 @@
 {
-  "timestamp": "2026-05-17T05:00:00Z",
-  "site": "https://a290.wiki",
-  "audit_type": "comprehensive_seo",
+  "timestamp": "2026-05-24T06:00:00Z",
   "checks": {
     "page_availability": {
       "status": "pass",
       "issues": [],
-      "details": "All 16 sitemap URLs return HTTP 200. No 404s, 500s, or redirect loops detected.",
-      "urls_checked": 16,
-      "urls_passed": 16
+      "details": {
+        "total_urls_checked": 16,
+        "all_200": true
+      }
     },
     "meta_tags": {
-      "status": "pass",
+      "status": "fail",
       "issues": [
         {
+          "page": "prospective-owner/index.html (EN)",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - malformed attribute causes parser failure. The tag reads: <meta property=\"<meta property= instead of <meta property=\"og:image\". This is likely a template copy/paste error.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "new-owner/index.html (EN)",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern. <meta property=\"<meta property= instead of og:image.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "how-to/index.html (EN)",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "troubleshooting/index.html (EN)",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "reference/index.html (EN)",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "accessories/index.html (EN)",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "communities/index.html (EN)",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "fr/prospective-owner/index.html",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "fr/new-owner/index.html",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "fr/how-to/index.html",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "fr/troubleshooting/index.html",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "fr/reference/index.html",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "fr/accessories/index.html",
+          "severity": "critical",
+          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": []
+        },
+        {
+          "page": "fr/communities/index.html",
+          "severity": "critical",
+          "issue": "Missing og:image entirely - no og:image meta tag found. All other required tags present.",
+          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
+          "missing_tags": ["og:image"]
+        },
+        {
+          "page": "fr/new-owner/index.html",
           "severity": "warning",
-          "issue": "og:image missing width and height dimensions",
-          "affected_pages": "all 16 pages",
-          "detail": "All pages use og:image pointing to https://a290.wiki/images/a290-hero.png but do not include og:image:width or og:image:height meta tags. This prevents social platforms from pre-sizing the image correctly, which can slow down page rendering on Facebook, LinkedIn, and other OG-consuming platforms."
+          "issue": "og:description significantly shorter than English counterpart. English: 103 chars, French: 68 chars. Should be roughly equivalent in scope.",
+          "present_tags": ["title", "description", "og:title", "og:description", "og:image (broken)", "canonical", "hreflang"],
+          "missing_tags": []
         }
-      ],
-      "details": {
-        "title_tags": "All 16 pages have <title> tags. Titles are unique and descriptive.",
-        "meta_description": "All 16 pages have meta name=description tags. All descriptions are unique and within acceptable length (under 160 chars).",
-        "og_tags": "All 16 pages have og:title, og:description, og:image, og:type (website), og:url, og:site_name.",
-        "twitter_tags": "All 16 pages have twitter:card (summary_large_image), twitter:title, twitter:description, twitter:image.",
-        "canonical": "All 16 pages have self-referencing canonical URLs.",
-        "hreflang": "All 16 pages have complete hreflang pairs: en, fr, and x-default. Cross-references are correct (EN pages point to FR, FR pages point to EN).",
-        "robots_txt": "Present and correct: allows all bots, references sitemap.",
-        "sitemap": "Present with 16 URLs (8 EN + 8 FR), consistent with actual page count."
-      }
+      ]
     },
     "image_alt": {
       "status": "pass",
-      "issues": [],
-      "details": "All <img> tags found in the HTML have alt attributes. No images missing alt text detected. Alt text quality is good — descriptive and not keyword-stuffed.",
-      "images_found": 6,
-      "images_with_alt": 6,
-      "images_without_alt": 0,
-      "note": "No images found in /fr/communities/ page (no images on that page, which is expected for a community links page)."
+      "issues": []
     },
     "internal_links": {
       "status": "pass",
-      "issues": [
-        {
-          "severity": "info",
-          "issue": "External link with rel=noopener not found on /fr/communities/",
-          "affected_pages": "/fr/communities/",
-          "detail": "The French communities page links to external Facebook groups and forums. These external links should be reviewed to ensure they all have target=\"_blank\" and rel=\"noopener\" for security."
-        }
-      ],
-      "details": {
-        "internal_links_checked": 86,
-        "broken_internal_links": 0,
-        "external_links_found": "multiple (Facebook groups, forum links)",
-        "stylesheet": "/styles.css exists and is 3509 bytes",
-        "navigation": "All internal links resolve to existing pages. Anchor links (e.g. #charging, #app-setup) are in-page targets, not broken links."
-      }
-    },
-    "structured_data": {
-      "status": "pass",
-      "issues": [
-        {
-          "severity": "info",
-          "issue": "Limited structured data variety",
-          "affected_pages": "non-accessories/non-troubleshooting pages",
-          "detail": "Most pages only include BreadcrumbList structured data. Only /accessories/ and /troubleshooting/ include FAQPage structured data. Other topic pages (Prospective Owner, New Owner, How To, Reference) could benefit from FAQPage or Article schema to potentially earn rich snippets in search results."
-        }
-      ],
-      "details": {
-        "breadcrumb_list": "Present on all 16 pages with correct pathing.",
-        "faq_schema": "Present on /accessories/ and /troubleshooting/ (English and French).",
-        "website_schema": "Present on /index.html (EN home) with WebSite schema (name, url, description, inLanguage).",
-        "recommendation": "Consider adding FAQPage schema to /prospective-owner/, /new-owner/, /how-to/, and /reference/ pages where FAQ-style content exists."
-      }
-    },
-    "page_performance": {
-      "status": "warning",
-      "issues": [
-        {
-          "severity": "warning",
-          "issue": "Thin page content on some pages",
-          "affected_pages": ["/communities/", "/fr/communities/"],
-          "detail": "/communities/ is 4465 bytes (EN) and /fr/communities/ is 4482 bytes (FR). These are the smallest pages and contain primarily external links with minimal original content. While not critically thin, Google may view these as low-value pages. Consider adding more descriptive content about each community."
-        },
-        {
-          "severity": "info",
-          "issue": "Cloudflare Web Analytics beacon",
-          "affected_pages": "all pages",
-          "detail": "Cloudflare Web Analytics script is loaded on all pages. This is acceptable for analytics but consider async/defer loading if page speed is a concern."
-        }
-      ],
-      "details": {
-        "page_sizes": {
-          "smallest": "4465 bytes (/communities/)",
-          "largest": "16501 bytes (/fr/troubleshooting/)",
-          "average": "10300 bytes"
-        }
-      }
-    },
-    "technical_seo": {
-      "status": "pass",
-      "issues": [
-        {
-          "severity": "info",
-          "issue": "No favicon defined",
-          "affected_pages": "all pages",
-          "detail": "No <link rel=icon> or <link rel=apple-touch-icon> tags found in any HTML. Consider adding favicon for better browser bookmark appearance and CTR in search results."
-        }
-      ],
-      "details": {
-        "html5_doctype": "All pages use <!DOCTYPE html>",
-        "charset": "All pages have <meta charset=utf-8>",
-        "viewport": "All pages have proper viewport meta tag",
-        "lang_attributes": "All pages have correct lang attribute (en or fr)",
-        "favicon": "Not found — consider adding",
-        "html_validation": "All pages use valid HTML5 structure"
-      }
+      "issues": []
     }
   },
   "summary": {
-    "total_issues": 6,
-    "critical": 0,
-    "warnings": 2,
-    "info_items": 4,
-    "overall_status": "pass",
-    "score": "9/10",
-    "strengths": [
-      "All pages return HTTP 200 — zero broken URLs",
-      "Complete meta tag coverage on all pages (title, description, OG, Twitter, canonical)",
-      "Proper hreflang implementation with en/fr/x-default pairs on all pages",
-      "All images have descriptive alt text",
-      "Robots.txt correctly configured with sitemap reference",
-      "JSON-LD structured data present (BreadcrumbList on all pages, FAQPage on select pages)",
-      "Unique and descriptive titles and meta descriptions on every page",
-      "Consistent bilingual structure (EN + FR) across all sections"
-    ],
-    "recommendations": [
-      {
-        "priority": "medium",
-        "action": "Add og:image:width and og:image:height meta tags",
-        "effort": "low",
-        "impact": "Improves social sharing rendering speed on Facebook/LinkedIn"
-      },
-      {
-        "priority": "low",
-        "action": "Add structured data to additional pages (FAQPage or Article schema)",
-        "effort": "medium",
-        "impact": "Could earn rich snippets for more pages in search results"
-      },
-      {
-        "priority": "low",
-        "action": "Add favicon and apple-touch-icon",
-        "effort": "low",
-        "impact": "Better bookmark appearance and browser UI"
-      },
-      {
-        "priority": "low",
-        "action": "Expand content on /communities/ pages",
-        "effort": "medium",
-        "impact": "Reduces thin content risk, improves SEO value of those pages"
-      }
-    ]
+    "total_issues": 15,
+    "critical": 14,
+    "warnings": 1
+  },
+  "notes": {
+    "sitemap_urls_checked": 16,
+    "pages_with_all_required_meta": ["index.html (EN) - all tags present and correct"],
+    "og_image_status": "Only 1 of 14 pages with og:image intent has valid syntax. 13 have broken syntax, 1 (fr/communities) is entirely missing. Home page (index.html) is the only page with correctly formed og:image.",
+    "hreflang_consistency_note": "All pages have proper hreflang cross-references (en + fr + x-default). Canonical URLs on French pages correctly point to their own French URLs, and English canonicals point to English URLs. Cross-language hreflang alternates are correctly set.",
+    "json_ld": "All English pages have FAQPage schema (how-to, troubleshooting, accessories). All pages have BreadcrumbList schema. French pages also have FAQPage where English counterparts do.",
+    "favicon_tags": "Home page has comprehensive favicon setup (ico, svg, png 48x48, png 192x192, apple-touch-icon). Sub-pages use only favicon.svg — consider adding full favicon set for consistency.",
+    "lang_switcher": "All pages have language switcher in body. English pages show 🇬🇧 EN as current + link to 🇫🇷 FR. French pages show link to EN + FR as current."
   }
 }
