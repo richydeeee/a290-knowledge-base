@@ -1,145 +1,48 @@
 {
-  "timestamp": "2026-05-24T06:00:00Z",
+  "timestamp": "2026-06-21T06:00:00Z",
   "checks": {
     "page_availability": {
       "status": "pass",
-      "issues": [],
-      "details": {
-        "total_urls_checked": 16,
-        "all_200": true
-      }
+      "issues": []
     },
     "meta_tags": {
-      "status": "fail",
-      "issues": [
-        {
-          "page": "prospective-owner/index.html (EN)",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - malformed attribute causes parser failure. The tag reads: <meta property=\"<meta property= instead of <meta property=\"og:image\". This is likely a template copy/paste error.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "new-owner/index.html (EN)",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern. <meta property=\"<meta property= instead of og:image.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "how-to/index.html (EN)",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "troubleshooting/index.html (EN)",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "reference/index.html (EN)",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "accessories/index.html (EN)",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "communities/index.html (EN)",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "fr/prospective-owner/index.html",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "fr/new-owner/index.html",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "fr/how-to/index.html",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "fr/troubleshooting/index.html",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "fr/reference/index.html",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "fr/accessories/index.html",
-          "severity": "critical",
-          "issue": "Broken og:image meta tag - same malformed attribute pattern.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": []
-        },
-        {
-          "page": "fr/communities/index.html",
-          "severity": "critical",
-          "issue": "Missing og:image entirely - no og:image meta tag found. All other required tags present.",
-          "present_tags": ["title", "description", "og:title", "og:description", "canonical", "hreflang"],
-          "missing_tags": ["og:image"]
-        },
-        {
-          "page": "fr/new-owner/index.html",
-          "severity": "warning",
-          "issue": "og:description significantly shorter than English counterpart. English: 103 chars, French: 68 chars. Should be roughly equivalent in scope.",
-          "present_tags": ["title", "description", "og:title", "og:description", "og:image (broken)", "canonical", "hreflang"],
-          "missing_tags": []
-        }
-      ]
+      "status": "pass",
+      "issues": []
     },
     "image_alt": {
       "status": "pass",
       "issues": []
     },
     "internal_links": {
-      "status": "pass",
-      "issues": []
+      "status": "warning",
+      "issues": [
+        {
+          "page": "/fr/new-owner/index.html",
+          "hreflang_issue": "hreflang en missing — fr/new-owner links fr but does not link back to /new-owner/",
+          "severity": "warning",
+          "detail": "English-language hreflang pair is missing. Should have: <link rel=\"alternate\" hreflang=\"en\" href=\"https://a290.wiki/new-owner/\">"
+        },
+        {
+          "page": "/fr/reference/index.html",
+          "hreflang_issue": "hreflang en missing — fr/reference links fr but does not link back to /reference/",
+          "severity": "warning",
+          "detail": "English-language hreflang pair is missing. Should have: <link rel=\"alternate\" hreflang=\"en\" href=\"https://a290.wiki/reference/\">"
+        }
+      ]
     }
   },
   "summary": {
-    "total_issues": 15,
-    "critical": 14,
-    "warnings": 1
-  },
-  "notes": {
-    "sitemap_urls_checked": 16,
-    "pages_with_all_required_meta": ["index.html (EN) - all tags present and correct"],
-    "og_image_status": "Only 1 of 14 pages with og:image intent has valid syntax. 13 have broken syntax, 1 (fr/communities) is entirely missing. Home page (index.html) is the only page with correctly formed og:image.",
-    "hreflang_consistency_note": "All pages have proper hreflang cross-references (en + fr + x-default). Canonical URLs on French pages correctly point to their own French URLs, and English canonicals point to English URLs. Cross-language hreflang alternates are correctly set.",
-    "json_ld": "All English pages have FAQPage schema (how-to, troubleshooting, accessories). All pages have BreadcrumbList schema. French pages also have FAQPage where English counterparts do.",
-    "favicon_tags": "Home page has comprehensive favicon setup (ico, svg, png 48x48, png 192x192, apple-touch-icon). Sub-pages use only favicon.svg — consider adding full favicon set for consistency.",
-    "lang_switcher": "All pages have language switcher in body. English pages show 🇬🇧 EN as current + link to 🇫🇷 FR. French pages show link to EN + FR as current."
+    "total_issues": 2,
+    "critical": 0,
+    "warnings": 2,
+    "details": {
+      "total_pages_crawled": 16,
+      "sitemap_urls": 16,
+      "all_pages_200": true,
+      "all_meta_tags_present": true,
+      "all_images_have_alt": true,
+      "all_internal_links_resolve": true,
+      "note": "Two fr/ pages (new-owner, reference) are missing the hreflang='en' backlink to their English originals. All other hreflang pairs are correctly bidirectional across EN and FR versions."
+    }
   }
 }
