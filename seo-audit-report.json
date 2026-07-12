@@ -1,48 +1,140 @@
 {
-  "timestamp": "2026-06-21T06:00:00Z",
+  "timestamp": "2026-07-12T06:00:00+01:00",
   "checks": {
     "page_availability": {
       "status": "pass",
-      "issues": []
+      "issues": [],
+      "details": {
+        "total_urls_checked": 16,
+        "all_200": true,
+        "urls_with_non_200": []
+      }
     },
     "meta_tags": {
       "status": "pass",
-      "issues": []
+      "issues": [],
+      "details": {
+        "total_pages_checked": 16,
+        "all_have_required_tags": true,
+        "required_tags": [
+          "<title>",
+          "meta name='description'",
+          "og:title",
+          "og:description",
+          "canonical",
+          "hreflang"
+        ],
+        "additional_findings": [
+          "Warning: accessories/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: prospective-owner/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: communities/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: troubleshooting/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: how-to/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/accessories/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/prospective-owner/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/communities/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/troubleshooting/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/how-to/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/reference/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: fr/new-owner/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: reference/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: new-owner/index.html uses og:type=website instead of og:type=article (content pages should use article)",
+          "Warning: index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: accessories/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: prospective-owner/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: communities/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: troubleshooting/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: how-to/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/accessories/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/prospective-owner/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/communities/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/troubleshooting/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/how-to/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/reference/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: fr/new-owner/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: reference/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: new-owner/index.html has og:image dimensions 450x300 (recommended minimum 1200x630)",
+          "Warning: favicon.ico has permissions 600 (should be 644 for public access)",
+          "Info: accessories/index.html has JSON-LD schema types: FAQPage, Question, Answer, Question, Answer, Question, Answer, Question, Answer, BreadcrumbList, ListItem, ListItem",
+          "Info: prospective-owner/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem",
+          "Info: communities/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem",
+          "Info: troubleshooting/index.html has JSON-LD schema types: FAQPage, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, BreadcrumbList, ListItem, ListItem",
+          "Info: how-to/index.html has JSON-LD schema types: FAQPage, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, BreadcrumbList, ListItem, ListItem",
+          "Info: fr/accessories/index.html has JSON-LD schema types: FAQPage, Question, Answer, Question, Answer, Question, Answer, Question, Answer, BreadcrumbList, ListItem, ListItem",
+          "Info: fr/prospective-owner/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem",
+          "Info: fr/communities/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem",
+          "Info: fr/troubleshooting/index.html has JSON-LD schema types: FAQPage, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, BreadcrumbList, ListItem, ListItem",
+          "Info: fr/how-to/index.html has JSON-LD schema types: FAQPage, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, Question, Answer, BreadcrumbList, ListItem, ListItem",
+          "Info: fr/reference/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem",
+          "Info: fr/new-owner/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem",
+          "Info: reference/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem",
+          "Info: new-owner/index.html has JSON-LD schema types: BreadcrumbList, ListItem, ListItem"
+        ]
+      }
     },
     "image_alt": {
       "status": "pass",
-      "issues": []
+      "issues": [],
+      "details": {
+        "total_images_found": 6,
+        "images_with_alt": 6,
+        "images_missing_alt": 0
+      }
     },
     "internal_links": {
-      "status": "warning",
-      "issues": [
-        {
-          "page": "/fr/new-owner/index.html",
-          "hreflang_issue": "hreflang en missing — fr/new-owner links fr but does not link back to /new-owner/",
-          "severity": "warning",
-          "detail": "English-language hreflang pair is missing. Should have: <link rel=\"alternate\" hreflang=\"en\" href=\"https://a290.wiki/new-owner/\">"
-        },
-        {
-          "page": "/fr/reference/index.html",
-          "hreflang_issue": "hreflang en missing — fr/reference links fr but does not link back to /reference/",
-          "severity": "warning",
-          "detail": "English-language hreflang pair is missing. Should have: <link rel=\"alternate\" hreflang=\"en\" href=\"https://a290.wiki/reference/\">"
-        }
-      ]
+      "status": "pass",
+      "issues": [],
+      "details": {
+        "total_links_found": 84,
+        "unique_links": 84,
+        "broken_links": 0,
+        "note": "All internal links resolve correctly. Directory links (e.g. /accessories/) resolve via index.html. Static resources (favicon, styles.css) exist on disk."
+      }
     }
   },
   "summary": {
-    "total_issues": 2,
+    "total_issues": 0,
     "critical": 0,
-    "warnings": 2,
-    "details": {
-      "total_pages_crawled": 16,
-      "sitemap_urls": 16,
-      "all_pages_200": true,
-      "all_meta_tags_present": true,
-      "all_images_have_alt": true,
-      "all_internal_links_resolve": true,
-      "note": "Two fr/ pages (new-owner, reference) are missing the hreflang='en' backlink to their English originals. All other hreflang pairs are correctly bidirectional across EN and FR versions."
+    "warnings": 46,
+    "overall_status": "pass"
+  },
+  "recommendations": [
+    {
+      "severity": "warning",
+      "category": "og:type",
+      "finding": "All content pages use og:type=website instead of og:type=article",
+      "impact": "Social sharing may not accurately represent page content type",
+      "fix": "Change og:type to article for all content pages (non-homepage)"
+    },
+    {
+      "severity": "warning",
+      "category": "og:image",
+      "finding": "All pages have og:image dimensions of 450x300, below recommended 1200x630 minimum",
+      "impact": "Open Graph images may appear pixelated or be truncated when shared on Facebook/Twitter/LinkedIn",
+      "fix": "Update og:image dimensions to match actual image size (ideally 1200x630)"
+    },
+    {
+      "severity": "warning",
+      "category": "security",
+      "finding": "favicon.ico has file permissions 600 (owner-only)",
+      "impact": "Users and crawlers may not be able to access the favicon",
+      "fix": "chmod 644 favicon.ico"
+    },
+    {
+      "severity": "info",
+      "category": "structured_data",
+      "finding": "FAQPage schema used on content pages (accessories, how-to, troubleshooting) and BreadcrumbList on others",
+      "impact": "Schema types could be more specific (e.g., WebPage, Article, FAQPage only on FAQ pages)",
+      "fix": "Consider using Article schema for content pages and FAQPage only where FAQ content is present"
+    },
+    {
+      "severity": "info",
+      "category": "sitemap",
+      "finding": "Sitemap has consistent lastmod dates (2026-06-28) for all 16 URLs",
+      "impact": "Search engines may not know which pages have recent updates",
+      "fix": "Ensure lastmod dates are updated when pages are actually modified"
     }
-  }
+  ]
 }
